@@ -25,6 +25,8 @@ class BaseRepository implements RepositoryInterface
     {
         if (!$this->model) {
             $this->setModelName();
+        }else{
+            $this->model = new $this->model;
         }
     }
 
