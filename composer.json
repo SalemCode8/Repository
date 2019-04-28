@@ -1,14 +1,29 @@
 {
-    "name": "salemcode8/repository",
-    "description": "Repository Pattern Design",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Salem Code",
-            "email": "salemcode8@gmail.com"
-        }
-    ],
-    "minimum-stability": "stable",
-    "require": {}
+  "name": "salemcode8/repository",
+  "description": "Repository Pattern Design",
+  "version": "1.0.0",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Salem Code",
+      "email": "salemcode8@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "illuminate/support": "5.7.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "SalemCode8\\Repository\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "SalemCode8\\Repository\\RepositoryServiceProvider"
+      ]
+    }
+  }
 }

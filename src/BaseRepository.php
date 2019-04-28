@@ -8,20 +8,11 @@
 
 namespace Salemcode8\Repository;
 
-use DataTables;
 use Exception;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\JsonResponse;
 use ReflectionClass;
 use ReflectionException;
 
-/**
- * Class BaseRepository
- * @package App\Repositories
- * @property Model $model
- */
 class BaseRepository implements RepositoryInterface
 {
     protected $model;
@@ -29,7 +20,6 @@ class BaseRepository implements RepositoryInterface
 
     /**
      * BaseRepository constructor.
-     * @throws ReflectionException
      */
     public function __construct()
     {
@@ -49,14 +39,8 @@ class BaseRepository implements RepositoryInterface
         }
     }
 
-    public function all($paginate = false)
+    public function all()
     {
-        if ($this->model instanceof Builder) {
-            return $this->model->get();
-        }
-        if($paginate){
-            return $this->model->paginate();
-        }
         /** @noinspection StaticInvocationViaThisInspection */
         return $this->model->all();
     }

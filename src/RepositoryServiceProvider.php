@@ -1,6 +1,6 @@
 <?php
 
-namespace Salemcode8\Repository;
+namespace SalemCode8\Repository;
 
 use Illuminate\Support\ServiceProvider;
 
