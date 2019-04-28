@@ -1,7 +1,7 @@
 {
   "name": "salemcode8/repository",
   "description": "Repository Pattern Design",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -12,7 +12,7 @@
   ],
   "minimum-stability": "stable",
   "require": {
-    "illuminate/support": "5.7.*"
+    "illuminate/support": "5.7.*|5.8.*"
   },
   "autoload": {
     "psr-4": {
