@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Salemcode8\Repository;
+namespace SalemCode8\Repository;
 
 
 interface RepositoryInterface

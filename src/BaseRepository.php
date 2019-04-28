@@ -6,7 +6,7 @@
  * Time: 5:54 AM
  */
 
-namespace Salemcode8\Repository;
+namespace SalemCode8\Repository;
 
 use Exception;
 use Illuminate\Http\JsonResponse;

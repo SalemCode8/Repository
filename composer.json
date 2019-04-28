@@ -1,8 +1,7 @@
 {
   "name": "salemcode8/repository",
   "description": "Repository Pattern Design",
-  "version": "1.0.2",
-  "type": "library",
+  "version": "1.0.3",
   "license": "MIT",
   "authors": [
     {
