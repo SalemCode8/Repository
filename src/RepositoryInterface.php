@@ -11,7 +11,6 @@ interface RepositoryInterface
 
     public function find($id);
 
-    public function where($column, $operator);
     public function create(array $data);
 
     public function update($io, array $id);
@@ -19,6 +18,4 @@ interface RepositoryInterface
     public function destroy($id);
 
     public function modelData();
-
-    public function active();
 }
