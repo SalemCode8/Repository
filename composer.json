@@ -1,0 +1,14 @@
+{
+    "name": "salemcode8/repository",
+    "description": "Repository Pattern Design",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Salem Code",
+            "email": "salemcode8@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

@@ -1,0 +1,8 @@
+<?php
+
+namespace App\Repositories;
+
+use Salemcode8\Repository\BaseRepository;
+class {model}Repository extends BaseRepository
+{
+}
