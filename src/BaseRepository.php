@@ -43,19 +43,16 @@ class BaseRepository implements RepositoryInterface
 
     public function all()
     {
-        /** @noinspection StaticInvocationViaThisInspection */
         return $this->model->all();
     }
 
     public function find($id)
     {
-        /** @noinspection StaticInvocationViaThisInspection */
         return $this->model->findOrFail($id);
     }
 
     public function create(array $data)
     {
-        /** @noinspection StaticInvocationViaThisInspection */
         return $this->model->create($data);
     }
 
@@ -77,7 +74,7 @@ class BaseRepository implements RepositoryInterface
         return $this->find($id)->delete();
     }
 
-    public function modelData(): array
+    public function getFillable(): array
     {
         return $this->model->getFillable();
     }
