@@ -18,4 +18,6 @@ interface RepositoryInterface
     public function destroy($id);
 
     public function modelData();
+
+    public function getFillable();
 }

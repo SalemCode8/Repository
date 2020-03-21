@@ -69,12 +69,17 @@ class BaseRepository implements RepositoryInterface
      * @return bool
      * @throws Exception
      */
-    public function destroy($id): bool
+    public function destroy($id)
     {
         return $this->find($id)->delete();
     }
 
-    public function getFillable(): array
+    public function getFillable()
+    {
+        return $this->model->getFillable();
+    }
+
+    public function modelData()
     {
         return $this->model->getFillable();
     }
